@@ -42,3 +42,8 @@ float x, y, resultado;
 }
 
 /*INSERTE DESPUES DE ESTA LINEA LAS FUNCIONES DE SUMAR, RESTAR, MULTIPLICAR, DIVIDIR Y POTENCIA*/
+
+/* Esta es la funcion para sumar dos valores */
+float sumar(float n1, float n2){
+return = n1+n2;
+}
