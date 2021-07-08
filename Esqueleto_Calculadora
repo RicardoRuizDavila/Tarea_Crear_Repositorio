@@ -1,0 +1,44 @@
+#include <stdio.h>
+int main() {
+float x, y, resultado;
+    char op;
+    int valido = 1;
+
+    printf("Ingrese operacion: (+,-,*,/,^)");
+    scanf("%c", &op);
+    printf("Ingrese el primer numero: ");
+    scanf("%f", &x);
+    printf("Ingrese el segundo numero (o potencia): ");
+    scanf("%f", &y);
+    
+    switch (op) {
+        case '+':
+            resultado = sumar(x,y);
+            break;
+        case '-':
+            resultado = restar(x,y);
+            break;
+        case 'x':
+            resultado = multiplicar(x,y);
+            break;
+        case '/':
+            resultado = dividir(x,y);
+            break;
+        case '^':
+            resultado = potencia(x, (int) y);
+            break;
+        default:
+            valido = 0;
+    }
+    
+    if (valido==1){
+        printf("El resultado es %f\n", resultado);
+        }
+    else{
+        printf("Operacion invalida\n");
+        }
+
+    return 0;
+}
+
+/*INSERTE DESPUES DE ESTA LINEA LAS FUNCIONES DE SUMAR, RESTAR, MULTIPLICAR, DIVIDIR Y POTENCIA*/
